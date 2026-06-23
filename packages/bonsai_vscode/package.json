@@ -1,0 +1,30 @@
+{
+  "name": "bonsai",
+  "displayName": "bonsai",
+  "publisher": "your-publisher-id",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.85.0"
+  },
+  "activationEvents": [
+    "onLanguage:dart"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "bonsai.analyzeWorkspace",
+        "title": "bonsai: Analyze Workspace"
+      }
+    ]
+  },
+  "scripts": {
+    "compile": "tsc -p .",
+    "watch": "tsc -watch -p ."
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.30",
+    "@types/vscode": "^1.85.0",
+    "typescript": "^5.4.5"
+  }
+}

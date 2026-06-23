@@ -1,0 +1,16 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "npm: compile bonsai_vscode",
+      "type": "shell",
+      "command": "npm",
+      "args": ["run", "compile"],
+      "options": {
+        "cwd": "${workspaceFolder}/packages/bonsai_vscode"
+      },
+      "group": "build",
+      "problemMatcher": []
+    }
+  ]
+}

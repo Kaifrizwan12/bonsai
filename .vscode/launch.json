@@ -1,0 +1,18 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Run bonsai Extension",
+      "type": "extensionHost",
+      "request": "launch",
+      "args": [
+        "--disable-extension=gornivv.vscode-flutter-files",
+        "--extensionDevelopmentPath=${workspaceFolder}/packages/bonsai_vscode"
+      ],
+      "outFiles": [
+        "${workspaceFolder}/packages/bonsai_vscode/out/**/*.js"
+      ],
+      "preLaunchTask": "npm: compile bonsai_vscode"
+    }
+  ]
+}
